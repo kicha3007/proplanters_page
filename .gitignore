@@ -6,6 +6,7 @@
 node_modules/
 
 
+
 /local/modules/endorphin.pphug/
 
 # Ignore env local files
@@ -64,7 +65,7 @@ hyperterm_access*
 *.log
 *.txt
 *.sass-cache
-*.html
+
 
 *.dat
 *.conf
