@@ -1,0 +1,16 @@
+extend include/template_base
+
+include include/blocks/credit-offer-box
+include include/blocks/credit-advantages-box
+include include/blocks/credit-card-box
+include include/blocks/credit-form-box
+
+block variables
+	- var title = 'Главная';
+
+block content
+	+credit-offer-box()
+	+credit-advantages-box()
+	+credit-card-box()
+	+credit-form-box()
+

@@ -1,0 +1,80 @@
+
+/******************* it-checkbox *******************/
+
+.credit-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  margin: 0;
+
+}
+
+.credit-checkbox__default {
+  width: 1px;
+  height: 1px;
+  position: relative;
+  right: -15px;
+}
+
+.credit-checkbox__pseudo {
+  position: relative;
+  width: 29px;
+  height: 29px;
+  border-radius: 4px;
+  background-color: #fcdd2c;
+  margin-right: 15px;
+}
+
+.credit-checkbox__pseudo:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 22px;
+  color: #000;
+  background: url("../img/checkbox-check.png") center no-repeat;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.4);
+  transition: all 0.225s ease-in-out;
+  cursor: pointer;
+}
+
+.credit-checkbox__default:checked + .credit-checkbox__pseudo:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.credit-checkbox__text {
+  flex-basis: 100px;
+  flex-grow: 1;
+
+
+  //height: 16px;
+
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  /* Text style for "Я принимаю" */
+  color: #000000;
+}
+
+.credit-checkbox__link {
+
+  margin: 0 3px;
+  color: #1d7eba;
+
+
+  &:hover {
+    text-decoration: underline;
+  }
+  
+}

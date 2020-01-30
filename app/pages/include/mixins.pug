@@ -1,0 +1,14 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="svg-icon svg-icon-" + name + ' ' + mod)
+		use(xlink:href="#icon-" + name)
+
+
+mixin checkbox(name,check=false)
+	label.checkbox
+		span.checkbox__name= name
+		if(check)
+			input(type="checkbox", checked)
+		else
+			input(type="checkbox")
+		span.checkbox__view

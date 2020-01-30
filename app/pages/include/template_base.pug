@@ -1,0 +1,96 @@
+include mixins
+include variables
+block variables
+
+doctype hmtl
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		- title_page = typeof title ==="undefined" ? 'proplanters' : 'proplanters | '+title
+			title #{title_page}
+		meta(name="viewport", content="width=device-width initial-scale=1.0")
+		//script(src='https://api-maps.yandex.ru/2.1/?apikey=<727ed760-7379-4492-a814-6646636915f4>&lang=ru_RU', type='text/javascript')
+		block assets
+
+			//link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css')
+			link(rel="stylesheet", href="css/style.css")
+			link(rel="stylesheet", href="css/owl.carousel.min.css")
+
+			link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap' rel='stylesheet')
+			link(href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' rel='stylesheet')
+			link(href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css' rel='stylesheet')
+
+
+			script(src="js/jquery-3.3.1.min.js")
+			script(src="js/ion.rangeSlider.js")
+			script(src="js/owl.carousel.min.js")
+
+
+			//- not include in bitrix
+			//script(src="js/svg-sprite.js")
+
+
+			//script(src="js/slick.min.js")
+			//script(src="js/jquery.fancybox.min.js")
+			//script(src="js/jquery.selectric.min.js")
+			script(src="js/scripts.js")
+
+	body
+		.main-wrapper
+
+			//include header.pug
+
+			main.main
+				block content
+
+			//include footer.pug
+
+		//- кнопка вверх
+		//-
+			button.up-button.js--anchor(data-target="top")
+				.up-button__svg
+					+icon('arrow-left', 'rotate-90')
+		
+		//- модальные окна
+		//div(style="display: none;")
+
+			//- окно уведомления
+			//.box-modal.box-modal_size_middle#notification
+				.box-modal__container
+					.box-modal__header
+						span.box-modal__title Уведомление
+						.box-modal__close.arcticmodal-close
+							+icon('close')
+					.box-modal__body
+						.text-center
+							h2 Вы успешно зарегистрировались
+							botton.btn.arcticmodal-close ок
+	//.overlay(data-voerlay)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

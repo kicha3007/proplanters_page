@@ -1,0 +1,45 @@
+mixin credit-form-box()
+	#credit-form-box.credit-form-box
+		.credit-form-box__main-title Получите кредитную карту, не выходя из дома
+		.credit-form-box__container
+			.credit-form-box__wrap
+				form.credit-form-box__form
+					.credit-form-box__sum
+						.credit-form-box__sum-number
+							input.credit-form-box__sum-number-value(type="text" name='NAME', maxlength='7', value='', placeholder='Иван', required data-range-slider-input)
+						.credit-form-box__sum-text Желаемый кредитный лимит
+					.credit-form-box__range-slider.range-slider-box
+						input.credit-form-box__range-slider-input(type='text' value='' data-credit-form-box-range-slider)
+					.credit-form-box__range-slider-line
+					.credit-form-box__top
+						.credit-form-box__input-column
+							select.credit-form-box__input.credit-form-box__input_mod_select(type='text'  name="")
+								option(disabled selected hidden) Тип деятельности*
+								option(value="") второй
+								option(value="") третий
+								option(value="") четвертный
+							.credit-form-box__input-column-arrow
+								img(src="img/credit-form-box-arrow.png", alt='')
+
+					.credit-form-box__center
+						.credit-form-box__title Контакты
+						.credit-form-box__input-wrap.credit-form-box__input-wrap_indent_bottom
+							.credit-form-box__input-column
+								input.credit-form-box__input(type="text" name='name', maxlength='200', value='', placeholder='Ваше имя*\n', required)
+						.credit-form-box__input-wrap.credit-form-box__input-wrap_mod_flex
+							.credit-form-box__input-column.credit-form-box__input-column_size-1
+								input.credit-form-box__input(type="tel" name='phone', maxlength='200', value='', placeholder='Телефон*\n', required)
+							.credit-form-box__input-column.credit-form-box__input-column_size-2
+								input.credit-form-box__input(type="email" name='email', maxlength='200', value='', placeholder='Эл. почта*\n', required)
+					.credit-form-box__bottom
+						.credit-form-box__bottom-half.credit-form-box__bottom-half_pos_1
+							.credit-form-box__checkbox-wrap
+								label.credit-checkbox
+									input.credit-checkbox__default(type="checkbox" name="AGREE" checked)
+									span.credit-checkbox__pseudo
+									span.credit-checkbox__text
+										| Я принимаю условия
+										a.credit-checkbox__link(href="/upload/soglashenie_proplanters.pdf") Пользовательского соглашения
+										| о получении и обработки персональных данных
+						.credit-form-box__bottom-half.credit-form-box__bottom-half_pos_2
+							a(href="#").credit-form-box__link.btn-main Далее

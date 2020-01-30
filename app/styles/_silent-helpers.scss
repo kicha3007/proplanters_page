@@ -1,0 +1,42 @@
+%ff-fira{
+	font-family: 'Fira Sans', 'Helvetica', 'Arial', sans-serif;
+}
+%ff-play{
+	font-family: 'Play', 'Helvetica', 'Arial', sans-serif;
+}
+
+%ts-bg{
+	transition: background-color .2s linear;
+}
+%ts-color2{
+	transition: color .2s linear;
+}
+%ts-all2{
+	transition: all .2s linear;
+}
+%ts-all3{
+	transition: all .3s linear;
+}
+%ts-all4{
+	transition: all .4s linear;
+}
+
+%ts-link{
+	transition: all .2s linear;
+}
+%ts-svg2{
+	transition: fill .2s linear;
+}
+
+%indents-off{
+	padding: 0;
+	margin: 0;
+}
+
+%ul-default{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	@extend %indents-off;
+}

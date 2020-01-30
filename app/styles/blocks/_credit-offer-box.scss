@@ -1,0 +1,188 @@
+.credit-offer-box {
+  margin-bottom: 30px;
+
+  &__wrap {
+    display: flex;
+    background-color: #f6f7f9;
+    @include laptop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    padding: 0 4%;
+
+    &_pos_1 {
+      order: 1;
+      @include laptop {
+        order: 2;
+
+      }
+
+    }
+
+    &_pos_2 {
+      order: 2;
+      @include laptop {
+        width: 100%;
+        flex-grow: 1000;
+        order: 1;
+      }
+
+    }
+  }
+
+  &__content {
+    padding: 30px 0;
+    @include tablets {
+      padding: 15px 15px 5px;
+    }
+  }
+
+  &__container {
+
+  }
+
+  &__main-title {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    @include tablets {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__main-subtitle {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    @include tablets {
+      font-size: 14px;
+    }
+  }
+
+  &__img-box {
+    margin-top: -30px;
+    overflow: hidden;
+    margin-bottom: -45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include laptop {
+      margin: 0;
+      height: 115px;
+    }
+
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 -35px;
+    @include tablets {
+      display: block;
+    }
+
+  }
+
+  &__item {
+    margin: 0 35px;
+    @include tablets {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+    @include tablets {
+      order: 2;
+      font-size: 14px;
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  &__desc {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    @include tablets {
+      order: 1;
+      margin-right: 10px;
+      padding-left: 15px;
+      font-size: 14px;
+      margin-bottom: 0;
+
+    }
+
+    &::before {
+      @include tablets {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background: #fcdd2c;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__link-wrap {
+    @include tablets {
+        width: 100%;
+      order: 3;
+      margin-top: 25px;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    &_show_desktop {
+      @include tablets {
+        display: none;
+
+      }
+    }
+
+    &_show_mobile {
+      display: none;
+      @include tablets {
+        display: inline-block;
+        padding: 3px 23px;
+      }
+    }
+
+
+  }
+}
+
